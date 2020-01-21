@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 - task: Maven@3
   inputs:
-    mavenPomFile: '${basedir}/web/WEB-INF/web.xml'
+    mavenPomFile: 'SampleWebApp/web/WEB-INF/web.xml'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
